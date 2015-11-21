@@ -1,6 +1,5 @@
 import java.util.*;
-import java.io.Serializable;
-public class society implements java.io.Serializable
+public class society
 {
    private ArrayList<student> members= new ArrayList<>();
    private ArrayList<student> boardMembers= new ArrayList<>();

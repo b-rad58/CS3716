@@ -18,9 +18,11 @@ public class societyInvintory
 
    public society getSociety(String name)
    { 
+      System.out.println("societies in inventory: " + societyList.size());
       for (int i =0; i<societyList.size(); i++)
       {
          society b= societyList.get(i);
+         System.out.println(i + ": " + b.getName());
          if (b.getName().equals(name))
 	    return b;
       }
