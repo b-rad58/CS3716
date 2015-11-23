@@ -10,5 +10,8 @@ public class message{
 	{s.getMailbox().addMessage(o);}
 }
 
+<<<<<<< HEAD
 
 //Removed to allow for compile. will be implemented with a notification system later in development.
+=======
+>>>>>>> e0c36026202835da7109d742124dee8cc9f9c3bc
