@@ -1,4 +1,25 @@
 import java.util.*;
+<<<<<<< HEAD
+public class societyInvintory
+{   
+        private ArrayList<society> societyList= new ArrayList<>();
+	public void addSociety(society b)
+	{ societyList.add(b);}
+
+        public society getSociety(String name)
+
+	{ 
+	for (int i =0; i<societyList.size()-1; i++)
+		{society b= societyList.get(i);
+                if (b.getName() ==name)
+		    {return b;}
+		else
+		    {System.out.println("society not found");
+                     return null;}
+	    }
+return null;
+	}
+=======
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.FileOutputStream;
@@ -93,5 +114,6 @@ public class societyInvintory
          }
       }
    }
+>>>>>>> e0c36026202835da7109d742124dee8cc9f9c3bc
 }
 

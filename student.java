@@ -4,6 +4,10 @@ private String stuName;
 private String stuNum;
 private String DOB;
 private String Pos;
+<<<<<<< HEAD
+private mailbox owned;
+=======
+>>>>>>> e0c36026202835da7109d742124dee8cc9f9c3bc
     public String getName()
     {return stuName;}
 	
@@ -27,4 +31,13 @@ private String Pos;
 	
     public void setPos(String b)
     {DOB=b;}
+<<<<<<< HEAD
+
+    public mailbox getMailbox()
+    {return owned;}
+	
+    public void setMailbox(mailbox b)
+    {owned = b;}
+=======
+>>>>>>> e0c36026202835da7109d742124dee8cc9f9c3bc
 }
