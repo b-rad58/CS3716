@@ -6,25 +6,29 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.io.EOFException;
+import java.io.Serializable;
 
-public class societyInvintory 
+public class SocietyInventory implements Serializable
 {   
-   private ArrayList<society> societyList= new ArrayList<>();
-
+   private ArrayList<Society> societyList= new ArrayList<>();
    
-   public void addSociety(society b) { 
-      societyList.add(b);
+   public SocietyInventory(ArrayList<Society> societies) {
+      this.societyList = societies;
+   }
+   
+   public SocietyInventory() {}
+  
+   public void addSociety(Society s) { 
+      societyList.add(s);
    }
 
-   public society getSociety(String name)
+   public Society getSociety(String name)
    { 
-      System.out.println("societies in inventory: " + societyList.size());
       for (int i =0; i<societyList.size(); i++)
       {
-         society b= societyList.get(i);
-         System.out.println(i + ": " + b.getName());
-         if (b.getName().equals(name))
-	    return b;
+         Society s = societyList.get(i);
+         if (s.getName().equals(name))
+	    return s;
       }
       return null;
    }
@@ -36,7 +40,7 @@ public class societyInvintory
          outputStream = new ObjectOutputStream(new FileOutputStream("./societyList.txt"));
          for(int i=0; i < societyList.size(); i++)
          {
-            society temp = societyList.get(i);
+            Society temp = societyList.get(i);
             outputStream.writeObject(temp);
          } 
             outputStream.flush();
@@ -45,7 +49,7 @@ public class societyInvintory
          System.out.println("societyList not found"); 
       } 
       catch(IOException ex) {
-         System.out.println("can't save"); 
+         ex.printStackTrace(); 
       }
       finally {
          if (outputStream != null) {
@@ -67,7 +71,7 @@ public class societyInvintory
          int i=0;
          while(true) {
             try {
-               societyList.add((society) inputStream.readObject());
+               this.societyList.add((Society) inputStream.readObject());
             } 
             catch (EOFException ex) {
                inputStream.close();
@@ -95,5 +99,6 @@ public class societyInvintory
          }
       }
    }
+
 }
 
