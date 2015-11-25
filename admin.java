@@ -31,16 +31,10 @@ public class admin
            return false;
           }
 
-          if (this.x != ((Simple)other).x)
+          if (this.getSociety != (other).getSociety)
          {
          return false;
          }
-
-         if (!this.str.equals(((Simple)other).str))
-         {
-         return false;
-         }
-
          return true;
        }
        
