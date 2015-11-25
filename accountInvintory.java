@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 public class accountInvintory{
 private ArrayList<account> accountList= new ArrayList<>();
-
+         public String toString()
+        {String b="the this account's are :"+ for (int i = 0; i<accountList.size(); i++)
+         { account.get(i).toString();}
+        return b;
+        }
 	public void addAccount(account b)
 	{ accountList.add(b);}
 
