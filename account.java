@@ -39,15 +39,20 @@ private String pass;
       return false;
    }
 
-   if (this.x != ((Simple)other).x)
+   if (this.getUseName != other.getUseName)
+   {
+      return false;
+   }
+   if (this.getPass != other.getPass)
+   {
+      return false;
+   }
+   if (this.getStu != other.getStu)
    {
       return false;
    }
 
-   if (!this.str.equals(((Simple)other).str))
-   {
-      return false;
-   }
+   
 
    return true;
 }
