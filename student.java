@@ -29,11 +29,30 @@ private mailbox owned;
     public String getPos()
     {return DOB;}
     
-     public boolean stuEqual(student b){
-     if (this.getNum()==b.getNum())
-         {return true;}
-     else{return false;}
-     }
+     public boolean equals(student other)
+{
+   if (other == null)
+   {
+      return false;
+   }
+
+   if (this.getClass() != other.getClass())
+   {
+      return false;
+   }
+
+   if (this.x != ((Simple)other).x)
+   {
+      return false;
+   }
+
+   if (!this.str.equals(((Simple)other).str))
+   {
+      return false;
+   }
+
+   return true;
+}
 	
     public void setPos(String b)
     {DOB=b;}
