@@ -10,6 +10,13 @@ private mailbox owned;
 >>>>>>> e0c36026202835da7109d742124dee8cc9f9c3bc
     public String getName()
     {return stuName;}
+    
+    public String toString()
+   {String b="the student's name is : "+this.getName()+"n\";
+    b="the student's number is : "+this.getNum()+"n\";
+    b="the student's date of birth is : "+this.getDOB()+"n\";
+    b="the student's position is : "+this.getPos()+"n\";
+   }
 	
     public void setName(String b)
     {stuName=b;}
