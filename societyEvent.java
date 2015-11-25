@@ -23,10 +23,15 @@ public class societyEvent
 	
 	public void invite (society s, String m)
 	{
-		//message g;
-                // removed to compile, will be added later in development 
-		//g.all(m,s);
+		message g;
+		g.all(m,s);
 	}
+	
+	public boolean socEvnEqual(societyEvent b){
+     if (this.getName()==b.getName())
+      {return true;}
+     else{return false;}
+      }
 	
 }
 
