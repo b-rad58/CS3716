@@ -79,6 +79,12 @@ public class society implements java.io.Serializable
 	{scantioned=true;}
 	public void setAsNotScanctioned()
 	{scantioned=false;}
+	
+	public boolean socEqual(society b){
+       if  (this.getName()==b.getName())
+           {return true;}
+       else{return false;}
+   }
 }
 
 
