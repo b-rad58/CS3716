@@ -48,12 +48,19 @@ private mailbox owned;
       return false;
    }
 
-   if (this.x != ((Simple)other).x)
+   if (this.getName != (other).getName)
    {
       return false;
    }
-
-   if (!this.str.equals(((Simple)other).str))
+   if (this.getNum != (other).getNum)
+   {
+      return false;
+   }
+   if (this.getDOB != (other).getDOB)
+   {
+      return false;
+   }
+   if (this.getPos != (other).getPos)
    {
       return false;
    }
