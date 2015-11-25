@@ -18,5 +18,11 @@ public class admin
 	{ societyName.setBoardMember(b);
         b.setPos(pos);
         }
+        
+        public boolean adminEqual(admin b){
+             if  (this.getSociety()==b.getSociety())
+                 {return true;}
+             else{return false;}
+   }
 	
 }
