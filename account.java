@@ -39,15 +39,15 @@ private String pass;
       return false;
    }
 
-   if (this.getUseName != other.getUseName)
+   if (this.getUseName() != other.getUseName())
    {
       return false;
    }
-   if (this.getPass != other.getPass)
+   if (this.getPass() != other.getPass())
    {
       return false;
    }
-   if (this.getStu != other.getStu)
+   if (this.getStu() != other.getStu())
    {
       return false;
    }
