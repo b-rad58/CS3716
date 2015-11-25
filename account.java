@@ -20,5 +20,11 @@ private String pass;
 	
     public void setPass(String b)
     {pass=b;}
+    
+    public boolean accEqual(account b){
+   if (this.getUseName()==b.getUseName())
+      {return true;}
+   else{return false;}
+   }
 }
 
