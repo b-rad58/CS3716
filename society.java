@@ -52,8 +52,8 @@ public class society implements java.io.Serializable
     for (int i=0; i<members.size(); i++)
         {b=b+ "the studnet's information is:  " members.get(i).toString(); 
         }
-    b=b+"the board members are" +for (int i=0; i<boardMembers.size(); i++)
-        {b=b+ "the boardMemeber is:  " members.get(i).getName(); 
+    b=b+"the board members are" + for (int i=0; i<boardMembers.size(); i++)
+        {b=b+"n\ "+ "boardMemeber:" +members.get(i).getName(); 
         }
       return b;
     
