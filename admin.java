@@ -31,7 +31,7 @@ public class admin
            return false;
           }
 
-          if (this.getSociety != (other).getSociety)
+          if (this.getSociety() != other.getSociety())
          {
          return false;
          }
