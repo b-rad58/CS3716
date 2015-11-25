@@ -43,6 +43,23 @@ public class society implements java.io.Serializable
          }
        return members.get(loc);
     }
+    
+    
+    public String toString()
+   {String b="the society's name is : "+this.getName()+"n\ ";
+    b=b+"the society's decription is : "+this.getDiscription()+"n\ ";
+    b=b+"the society is: "+ if(!scantioned){"not"}+ "scantioned"+"n\ ";
+    for (int i=0; i<members.size(); i++)
+        {b=b+ "the studnet's information is:  " members.get(i).toString(); 
+        }
+    b=b+"the board members are" +for (int i=0; i<boardMembers.size(); i++)
+        {b=b+ "the boardMemeber is:  " members.get(i).getName(); 
+        }
+      return b;
+    
+    
+   
+   }
 	
     public void AddStudent(student b,int i)
     {members.add(b);}
@@ -104,6 +121,8 @@ public class society implements java.io.Serializable
 
          return true;
     }
+}
+
 }
 
 
