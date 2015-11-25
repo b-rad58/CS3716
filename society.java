@@ -70,6 +70,8 @@ public class society implements java.io.Serializable
              }
         
     }
+    public boolean getScantioned()
+    {return scantioned;}
     
     public void setBoardMember(student s)
      {boardMembers.add(s);}
@@ -109,15 +111,29 @@ public class society implements java.io.Serializable
          return false;
          }
 
-         if (this.x != ((Simple)other).x)
+         if (this.getDiscription() != (other).getDiscription())
          {
           return false;
          }
-
-        if (!this.str.equals(((Simple)other).str))
+         if (this.getName() != (other).getName())
          {
           return false;
          }
+         if (this.getScantioned() != other.getScantioned())
+         {
+          return false;
+         }
+         for (int i=0; i<members.size(); i++)
+        {this.members(i)!=other.members(i); 
+        return false;
+        	
+        }
+        for (int i=0; i<boardMembers.size(); i++)
+        {this.boardMembers(i)!=other.boardMembers(i); 
+        return false;
+        	
+        }
+         
 
          return true;
     }
