@@ -45,12 +45,15 @@ public class societyEvent
       return false;
    }
 
-   if (this.x != ((Simple)other).x)
+   if (this.getName() != (other).getName())
    {
       return false;
    }
-
-   if (!this.str.equals(((Simple)other).str))
+   if (this.getDescription() != (other).getDescription())
+   {
+      return false;
+   }
+   if (this.getTime() != (other).getTime())
    {
       return false;
    }
