@@ -30,12 +30,7 @@ public class mailbox
               return false;
               }
 
-          if (this.x != ((Simple)other).x)
-          {
-         return false;
-         }
-
-          if (!this.str.equals(((Simple)other).str))
+          if (this.getStu() != (other.getStu())
          {
          return false;
          }
