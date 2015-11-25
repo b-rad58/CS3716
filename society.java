@@ -80,11 +80,30 @@ public class society implements java.io.Serializable
 	public void setAsNotScanctioned()
 	{scantioned=false;}
 	
-	public boolean socEqual(society b){
-       if  (this.getName()==b.getName())
-           {return true;}
-       else{return false;}
-   }
+	public boolean equals(society other)
+        {
+          if (other == null)
+         {
+         return false;
+         }
+ 
+         if (this.getClass() != other.getClass())
+         {
+         return false;
+         }
+
+         if (this.x != ((Simple)other).x)
+         {
+          return false;
+         }
+
+        if (!this.str.equals(((Simple)other).str))
+         {
+          return false;
+         }
+
+         return true;
+    }
 }
 
 
