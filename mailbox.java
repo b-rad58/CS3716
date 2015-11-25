@@ -16,6 +16,32 @@ public class mailbox
 
        public void addMessage(Object sent)
        {mailbox.add(sent);} 
+       
+       
+       public boolean equals(Object other)
+         {
+          if (other == null)
+          {
+            return false;
+               }
+
+             if (this.getClass() != other.getClass())
+             {
+              return false;
+              }
+
+          if (this.x != ((Simple)other).x)
+          {
+         return false;
+         }
+
+          if (!this.str.equals(((Simple)other).str))
+         {
+         return false;
+         }
+        
+         return true;
+         }
 
 
 
