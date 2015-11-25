@@ -18,7 +18,7 @@ public class mailbox
        {mailbox.add(sent);} 
        
        
-       public boolean equals(Object other)
+       public boolean equals(mailbox other)
          {
           if (other == null)
           {
