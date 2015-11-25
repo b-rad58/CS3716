@@ -5,7 +5,13 @@ private String useName;
 private String pass;
     public student getStu()
     {return stu;}
-	
+    
+    public String toString()
+        {String b="the student this account belongs to is :"+ this.getStu().getName();
+        b=b+"the this account's username is :"+ this.getUseName();
+        b=b+"the this account's password is :"+ this.getPass();
+        return b;
+        }	
     public void setStu(student b)
     {stu=b;}
 	
