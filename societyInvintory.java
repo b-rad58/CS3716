@@ -31,7 +31,7 @@ import java.io.EOFException;
 public class societyInvintory 
 {   
    private ArrayList<society> societyList= new ArrayList<>();
-
+   
    
    public void addSociety(society b) { 
       societyList.add(b);
@@ -46,6 +46,13 @@ public class societyInvintory
 	    return b;
       }
       return null;
+   }
+   public String toString()
+   {String b="all society's information is: ";
+    for (int i=0; i<societyList.size(); i++)
+         {b=b+"n\ " +societyList.get(i).toString();}
+    return b;
+
    }
 
    public void saveSocieties()
