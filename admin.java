@@ -19,10 +19,29 @@ public class admin
         b.setPos(pos);
         }
         
-        public boolean adminEqual(admin b){
-             if  (this.getSociety()==b.getSociety())
-                 {return true;}
-             else{return false;}
-   }
+        public boolean equals(admin other)
+        {
+         if (other == null)
+         {
+         return false;
+         }
+
+          if (this.getClass() != other.getClass())
+          {
+           return false;
+          }
+
+          if (this.x != ((Simple)other).x)
+         {
+         return false;
+         }
+
+         if (!this.str.equals(((Simple)other).str))
+         {
+         return false;
+         }
+
+         return true;
+       }
 	
 }
