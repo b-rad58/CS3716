@@ -12,6 +12,12 @@ public class societyEvent
     {name=b;}
 	public String getName()
     {return name;}
+    public String toString()
+    {String b= "the event's name is: "+ this.getName()+"n\ ";
+    b=b+ "the event's time is: "+ this.getTime()  +"n\ ";
+    b=b+ "the event's name is: "+ this.getDescription() +"n\ ";
+    return b;
+    }
 	
     public void setTime(String b)
     {time=b;}
