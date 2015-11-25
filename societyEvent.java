@@ -27,11 +27,30 @@ public class societyEvent
 		g.all(m,s);
 	}
 	
-	public boolean socEvnEqual(societyEvent b){
-     if (this.getName()==b.getName())
-      {return true;}
-     else{return false;}
-      }
+	public boolean equals(societyEvent other)
+{
+   if (other == null)
+   {
+      return false;
+   }
+
+   if (this.getClass() != other.getClass())
+   {
+      return false;
+   }
+
+   if (this.x != ((Simple)other).x)
+   {
+      return false;
+   }
+
+   if (!this.str.equals(((Simple)other).str))
+   {
+      return false;
+   }
+
+   return true;
+}
 	
 }
 
