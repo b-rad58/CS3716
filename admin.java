@@ -43,5 +43,10 @@ public class admin
 
          return true;
        }
+       
+       public String toString()
+        {String b="the society this admin runs is :"+ this.getScoiety();
+        return b;
+        }
 	
 }
