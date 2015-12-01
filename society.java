@@ -99,7 +99,7 @@ public class society implements java.io.Serializable
 	public void setAsNotScanctioned()
 	{scantioned=false;}
 	
-	public boolean equals(society other)
+	public boolean equals(object other)
         {
           if (other == null)
          {
