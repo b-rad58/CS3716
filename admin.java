@@ -19,7 +19,7 @@ public class admin
         b.setPos(pos);
         }
         
-        public boolean equals(admin other)
+        public boolean equals(object other)
         {
          if (other == null)
          {
