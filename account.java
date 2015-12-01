@@ -27,7 +27,7 @@ private String pass;
     public void setPass(String b)
     {pass=b;}
     
-    public boolean equals(account other)
+    public boolean equals(object other)
 {
    if (other == null)
    {
