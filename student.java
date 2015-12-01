@@ -34,7 +34,7 @@ private mailbox owned;
     {DOB=b;}
 
     public String getPos()
-    {return DOB;}
+    {return pos;}
     
      public boolean equals(object other)
 {
