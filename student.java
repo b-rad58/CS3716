@@ -36,7 +36,7 @@ private mailbox owned;
     public String getPos()
     {return DOB;}
     
-     public boolean equals(student other)
+     public boolean equals(object other)
 {
    if (other == null)
    {
