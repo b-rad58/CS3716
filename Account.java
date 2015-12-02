@@ -50,4 +50,33 @@ public class Account implements Serializable
    }    
    
    
+   @Override
+	public boolean equals(Object other) {
+		if (other == null) {
+			return false;
+		}
+
+		if (other == this) {
+			return true;
+		}
+
+		if (!(other instanceof Account)) {
+			return false;
+		} else {
+			Account o = (Account)other;
+			if (this.getUsername() != o.getUsername()) {
+				return false;
+			}
+			if (this.getPassword() != o.getPassword()) {
+				return false;
+			}
+			if (this.getStudent() != o.getStudent()) {
+				return false;
+			}
+
+		}
+		return true;
+
+	}
+   
 } 
