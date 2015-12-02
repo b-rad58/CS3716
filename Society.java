@@ -56,6 +56,11 @@ public class Society implements java.io.Serializable
          }
       }        
    }
+
+
+   public Account getBoardAt(int i)
+   {return boardMembers.get(i);
+   }
     
    public void setBoardMember(Account stu) {
       boardMembers.add(stu);

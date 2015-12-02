@@ -6,6 +6,7 @@ public class Account implements Serializable
    private Student stu;
    private String username;
    private String pass;
+   private Mailbox box;
 
    public Account(Student stu, String username, String password) {
       this.stu = stu;
@@ -31,6 +32,13 @@ public class Account implements Serializable
   
    public void setStudent(Student stu) {
       this.stu = stu;
+   }
+   public Mailbox getMailbox() {
+      return box;
+   }
+  
+   public void setMailbox(Mailbox g) {
+      this.box = g;
    }
 
    public void setUsername(String username) {
