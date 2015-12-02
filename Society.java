@@ -105,14 +105,33 @@ public class Society implements java.io.Serializable
 
 		if (!(other instanceof Society)) {
 			return false;
-		} else {
+		} 
+                else 
+                {
 			Society o = (Society)other;
-			if (this.getName() != o.getName()) {
+			if (this.getName() != o.getName()) 
+                        {
 				return false;
 			}
-			if (this.getDescription() != o.getDescription()) {
+			if (this.getDescription() != o.getDescription()) 
+                        {
 				return false;
 			}
+
+
+
+                        for (int i=0; i<members.size(); i++)
+                        {
+                         if (this.getAt(i)!= o.getAt(i) ) 
+                         {return false;}
+        	
+                        }
+                         
+                         for (int i=0; i<boardMembers.size(); i++)
+                         {
+                         if (this.getBoardAt(i) != o.getBoardAt(i)) 
+                         {return false;}
+                         }
 			
 
 		}
