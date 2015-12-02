@@ -91,6 +91,34 @@ public class Society implements java.io.Serializable
    public void unSanctioned() {
       sanctioned = false;
    }
+   
+   
+     @Override
+	public boolean equals(Object other) {
+		if (other == null) {
+			return false;
+		}
+
+		if (other == this) {
+			return true;
+		}
+
+		if (!(other instanceof Society)) {
+			return false;
+		} else {
+			Society o = (Society)other;
+			if (this.getName() != o.getName()) {
+				return false;
+			}
+			if (this.getDescription() != o.getDescription()) {
+				return false;
+			}
+			
+
+		}
+		return true;
+
+	}
 }
 
 
