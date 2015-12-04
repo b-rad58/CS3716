@@ -51,6 +51,9 @@ public class Student implements Serializable
       this.pos = pos;
    }
 
+   public Mailbox getMailbox() {
+      return mail;
+   }
 	
    public Student getStudent(){
 	   return this;
